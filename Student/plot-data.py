@@ -154,10 +154,10 @@ def plot_accuracy_time():
 		plt.close()
 
 if __name__ == "__main__":
-	# parser = argparse.ArgumentParser(description="Parse explanation type")
-	# parser.add_argument('explanation_type', type=str, help="A required string argument for the explanation type to graph learning curves for")
-	# args = parser.parse_args()
-	# explanation = args.explanation_type
-	# plot_accuracy_data_size(explanation_type=explanation)
-	plot_middle_and_edge()
+	parser = argparse.ArgumentParser(description="Parse explanation type")
+	parser.add_argument('explanation_type', type=str, help="A required string argument for the explanation type to graph learning curves for")
+	args = parser.parse_args()
+	explanation = args.explanation_type
+	plot_accuracy_data_size(explanation_type=explanation)
+	#plot_middle_and_edge()
 	#plot_accuracy_time()
