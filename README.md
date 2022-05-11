@@ -18,3 +18,6 @@ hyperparameter values discussed in the paper. The accuracy curve results will be
 hyperparameter value for the given explanation type.
 - Run ```python3 compute-area.py [explanation-type]``` to compute the area under each of the accuracy curves for a given explanation type, as well as other
 statistics such as final accuracy and fraction of area increase over baseline.
+
+## Code References
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
