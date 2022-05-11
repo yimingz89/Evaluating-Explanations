@@ -152,22 +152,6 @@ def saliency_smooth_grad(net, img, N_repeat=50, noise_level=0.15):
             mean_grads[i] = grad
         return mean_grads, labels
 
-# Grad-CAM
-def saliency_gradcam(net, img):
-    B, _, H, W = img.shape
-    img = img.to(device)
-    with torch.no_grad():
-        logits = net(img)['final']
-        labels = np.argmax(logits.detach().cpu().numpy(), axis=1)
-        conv_maps = net.maxpool(net.relu(net.bn1(net.conv1(img))))
-    return img, labels
-# LIME
-def saliency_lime(net, img):
-    pass
-
-# SHAP
-def saliency_shap(net, img):
-    pass
 
 # get full teacher train set for student
 with torch.no_grad():
