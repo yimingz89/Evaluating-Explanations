@@ -12,8 +12,8 @@ import pickle
 import scipy
 from scipy import ndimage
 PATH = F"./models/teacher_net.pth"
-TEST_PATH = F"./teacher-data/teacher-21-layers-test.pkl"
-TRAIN_PATH = F"./teacher-data/teacher-21-layers-train.pkl"
+TEST_PATH = F"../Student/data/teacher-21-layers-test.pkl"
+TRAIN_PATH = F"../Student/data/teacher-21-layers-train.pkl"
 
 # define neural network architecture
 
